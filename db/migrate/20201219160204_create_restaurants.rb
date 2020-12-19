@@ -5,7 +5,7 @@ class CreateRestaurants < ActiveRecord::Migration[6.0]
       t.string :address
       t.string :cuisine
       t.integer :average_price
-      t.references :user
+      t.references :user, null: true
 
       t.timestamps
     end
