@@ -6,4 +6,5 @@ Rails.application.routes.draw do
       resources :restaurants, only: %i[index show update create destroy]
     end
   end
+  get '/request', to: 'searches#show', as: 'search'
 end
