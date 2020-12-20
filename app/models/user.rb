@@ -3,4 +3,6 @@ class User < ApplicationRecord
   has_many :restaurants
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  validates :email, presence: true, email: true
+  validates :name, presence: true, uniqueness: true
 end

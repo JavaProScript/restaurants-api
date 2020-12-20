@@ -14,7 +14,7 @@ i = 1
 20.times do 
   restaurant = Restaurant.create(
     name: Faker::Restaurant.name,
-    cuisine: %w[Italian Lebanese Japanese Belgian French Chinese Undefined].sample,
+    cuisine: %w[Italian Lebanese Japanese Belgian French Chinese].sample,
     address: Faker::Address.full_address,
     average_price: (15..50).to_a.sample.to_f,
     user: bruce
